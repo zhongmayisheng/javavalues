@@ -3,7 +3,7 @@
 该视频为高可用架构设计篇，有知名互联网公司架构师提供，适合中高级和架构师学习观看，小编整理后，免费提供大家学习下载，需要的小伙伴可以直接去文末下载。**本视频教程共16节。**
 
 
-[![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013565823.jpg)](www.idejihuo.com)
+[![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](www.idejihuo.com)
 
 ## [课程主要内容]()
 
@@ -46,21 +46,28 @@
 
 ## [全部打包下载]()
 
-另有更多免费视频供大家下载，因资源较大，如果需要全部打包下载，可以关注我的个人公众号，免费无套路领取。同时小编整理了部分IDE的免费激活教程，也可以在公众号获取**永久激活**获取。
+#### 另有更多免费视频供大家下载，因资源较大，差不多有2000GB左右，全部打包免费下载。
+
+#### [下载链接:]()
 
 ![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/%E7%BB%88%E7%A0%81%E4%B8%80%E7%94%9F.jpg)
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451225.jpg)
+## 目录
+![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/101.jpg)
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451247.jpg)
+### 前端
+![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/102.jpg)
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451370.jpg)
+### 后端
+![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/103.jpg)
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451395.jpg)
+### 移动端
+![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/104.jpg)
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451443.jpg)
+### 人工智能
+![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/105.jpg)
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451446.jpg)
+### 大数据
+![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/106.jpg)
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013431493.jpg)
-
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/%E7%BB%88%E7%A0%81%E4%B8%80%E7%94%9F.jpg)
