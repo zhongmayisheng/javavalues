@@ -46,4 +46,4 @@
 
 另有更多免费视频供大家下载，因资源较大，如果需要全部打包下载，可以关注我的个人公众号，免费无套路领取。同时小编整理了部分IDE的免费激活教程，也可以在公众号获取**永久激活**获取。
 
-![截图](http://blog.idejihuo.com/wp-content/uploads/2022/04/未标题-终码一生.jpg)
+![截图](https://gitee.com/itmatu/zhongmayisheng/blob/master/video/%E7%BB%88%E7%A0%81%E4%B8%80%E7%94%9F.jpg)
