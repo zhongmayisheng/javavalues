@@ -3,6 +3,8 @@
 该视频为高可用架构设计篇，有知名互联网公司架构师提供，适合中高级和架构师学习观看，小编整理后，免费提供大家学习下载，需要的小伙伴可以直接去文末下载。**本视频教程共16节。**
 
 
+[![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013565823.jpg)](www.idejihuo.com)
+
 ## [课程主要内容]()
 
 - **[01、高可用架构知识原理篇](https://github.com/purocean/yn/releases)**
@@ -33,8 +35,8 @@
 ## [更多视频如下：]()
 
 - **[面试资料（不断更新中...）]()**
-- **[后台]()**
-- **[前端]()**
+- **[后台开发]()**
+- **[前端技术]()**
 - **[数据库]()**
 - **[大数据]()**
 - **[移动端]()**
@@ -46,4 +48,19 @@
 
 另有更多免费视频供大家下载，因资源较大，如果需要全部打包下载，可以关注我的个人公众号，免费无套路领取。同时小编整理了部分IDE的免费激活教程，也可以在公众号获取**永久激活**获取。
 
-![截图](https://gitee.com/itmatu/zhongmayisheng/blob/master/video/%E7%BB%88%E7%A0%81%E4%B8%80%E7%94%9F.jpg)
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013431493.jpg)
+
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451225.jpg)
+
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451247.jpg)
+
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451370.jpg)
+
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451395.jpg)
+
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451443.jpg)
+
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451446.jpg)
+
+![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013431493.jpg)
+
