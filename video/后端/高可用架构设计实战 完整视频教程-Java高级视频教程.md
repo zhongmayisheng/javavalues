@@ -48,7 +48,7 @@
 
 另有更多免费视频供大家下载，因资源较大，如果需要全部打包下载，可以关注我的个人公众号，免费无套路领取。同时小编整理了部分IDE的免费激活教程，也可以在公众号获取**永久激活**获取。
 
-![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013431493.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/%E7%BB%88%E7%A0%81%E4%B8%80%E7%94%9F.jpg)
 
 ![Img](http://www.itzoo.net/wp-content/uploads/2022/04/2022043013451225.jpg)
 
