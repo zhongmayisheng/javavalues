@@ -50,7 +50,7 @@
 
 #### [下载链接:]()
 
-![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/%E7%BB%88%E7%A0%81%E4%B8%80%E7%94%9F.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/终码一生.jpg)
 
 ## 目录
 ![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/101.jpg)
@@ -70,4 +70,4 @@
 ### 大数据
 ![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/106.jpg)
 
-![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/%E7%BB%88%E7%A0%81%E4%B8%80%E7%94%9F.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/终码一生.jpg)

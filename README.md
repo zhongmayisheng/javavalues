@@ -1,37 +1,48 @@
 # 全栈视频教程
 
-#### 介绍
+### 介绍
 全栈视频教程和资料，2000GB左右，视频教程囊括了前端，后端，小程序，移动端，数据库，大数据，人工智能，数据分析，算法，大学高数，分布式，高并发等，从初级到架构，附带项目实战。
 
-#### 软件架构
-软件架构说明
+
+## [教程列表：]()
+
+- **[面试资料（不断更新中...）]()**
+- **[后台开发]()**
+- **[前端技术]()**
+- **[数据库]()**
+- **[大数据]()**
+- **[移动端]()**
+- **[人工智能]()**
+- **[算法]()**
 
 
-#### 安装教程
+## [全部打包下载]()
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### 另有更多免费视频供大家下载，因资源较大，差不多有2000GB左右，全部打包免费下载。
 
-#### 使用说明
+#### 下载链接: [如果资源被删，请联系我，可以直接推给你，绝不跑空腿](https://gitee.com/itmatu/zhongmayisheng/blob/master/video/index.md)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/终码一生.jpg)
 
-#### 参与贡献
+## 下面部分内容展示
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/101.jpg)
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+#### 前端
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/102.jpg)
 
+#### 后端
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/103.jpg)
 
-#### 特技
+#### 移动端
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/104.jpg)
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+#### 人工智能
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/105.jpg)
+
+#### 大数据
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/106.jpg)
+
+#### 面试题
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/107.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/108.jpg)
+
