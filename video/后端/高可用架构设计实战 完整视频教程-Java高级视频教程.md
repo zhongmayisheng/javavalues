@@ -48,26 +48,26 @@
 
 #### 另有更多免费视频供大家下载，因资源较大，差不多有2000GB左右，全部打包免费下载。
 
-#### [下载链接:]()
+#### 全部资源下载: [如果资源被删，请联系我，可以直接推给你，绝不跑空腿](https://gitee.com/itmatu/zhongmayisheng/blob/master/video/index.md)
 
-![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/终码一生.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/终码一生.jpg)
 
 ## 目录
-![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/101.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/101.jpg)
 
 ### 前端
-![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/102.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/102.jpg)
 
 ### 后端
-![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/103.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/103.jpg)
 
 ### 移动端
-![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/104.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/104.jpg)
 
 ### 人工智能
-![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/105.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/105.jpg)
 
 ### 大数据
-![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/106.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/106.jpg)
 
-![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/终码一生.jpg)
+![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/终码一生.jpg)
