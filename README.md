@@ -3,6 +3,7 @@
 ### 介绍
 全栈视频教程和资料，2000GB左右，视频教程囊括了前端，后端，小程序，移动端，数据库，大数据，人工智能，数据分析，算法，大学高数，分布式，高并发等，从初级到架构，附带项目实战。
 
+[![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](www.idejihuo.com)
 
 ## [教程列表：]()
 
