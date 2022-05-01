@@ -22,8 +22,6 @@
 
 #### 下载链接: [如果资源被删，请联系我，可以直接推给你，绝不跑空腿](https://gitee.com/itmatu/zhongmayisheng/blob/master/video/index.md)
 
-![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/终码一生.jpg)
-
 ## 下面部分内容展示
 ![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/101.jpg)
 
