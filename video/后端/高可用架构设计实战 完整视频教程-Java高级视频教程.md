@@ -1,6 +1,6 @@
 # 高可用架构设计实战 完整视频教程-Java高级视频教程
 
-该视频为高可用架构设计篇，有知名互联网公司架构师提供，适合中高级和架构师学习观看，小编整理后，免费提供大家学习下载，需要的小伙伴可以直接去文末下载。**本视频教程共16节。**
+该视频为高可用架构设计篇，有知名互联网公司架构师提供，适合中高级和架构师学习观看，小编整理后，免费提供大家学习下载，需要的小伙伴可以直接去下面下载。**本视频教程共16节。**
 
 
 [![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](www.idejihuo.com)
@@ -48,7 +48,7 @@
 
 #### 另有更多免费视频供大家下载，因资源较大，差不多有2000GB左右，全部打包免费下载。
 
-#### 全部资源下载: [如果资源被删，请联系我，可以直接推给你，绝不跑空腿](https://gitee.com/itmatu/zhongmayisheng/blob/master/video/index.md)
+#### 全部资源下载: [如果资源被删，请联系我，可以直接推给你，绝不跑空腿](https://gitee.com/itmatu/zhongmayisheng/blob/master/video/README.md)
 
 ![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/终码一生.jpg)
 
