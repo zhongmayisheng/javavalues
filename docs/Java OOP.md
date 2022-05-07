@@ -1,10 +1,9 @@
 # Java OOP八股文面试题
 
-该部分为java基础部分面试题，适合初中级程序员了解。以备面试的时候问到。
+~~该部分为java基础部分面试题，适合初中级程序员了解。以备面试的时候问到。~~
 
 [toc]{level: [3]}
 
-~~面试题问题~~
 
 ### 1、什么是B/S架构？什么是C/S架构
 1.B/S(Browser/Server)，浏览器/服务器程序
@@ -160,5 +159,114 @@ public	能	能	能	能
 protected	能	能	能	不能
 default	能	能	不能	不能
 private	能	不能	不能	不能
+
 类的成员不写访问修饰时默认为 default。默认对于同一个包中的其他类相当于公 开（public），对于不是同一个包中的其他类相当于私有
 （private）。受保护 （protected）对子类相当于公开，对不是同一包中的没有父子关系的类相当于私 有。Java 中，外部类的修饰符只能是 public 或默认，类的成员（包括内部类）的 修饰符可以是以上四种。
+
+### 21、String 是最基本的数据类型吗？ ###
+不是。Java 中的基本数据类型只有 8 个：byte、short、int、long、ﬂoat、double、  char、boolean；除了基本类型（primitive type）， 剩下的都是引用类型（reference type），Java 5 以后引入的枚举类型也算是一种比较特殊的引用类型。
+
+### 22、ﬂoat f=3.4;是否正确？ ###
+答:不正确。3.4 是双精度数，将双精度型（double）赋值给浮点型（ﬂoat）属于 下转型（down-casting，也称为窄化）会造成精度损失， 因此需要强制类型转换 ﬂoat f =(ﬂoat)3.4; 或者写成 ﬂoat f =3.4F;。
+
+### 23、short s1 = 1; s1 = s1 + 1;有错吗?short s1 = 1; s1 += 1; 有错吗？ ###
+对于 short s1 = 1; s1 = s1 + 1;由于 1 是 int 类型，因此 s1+1 运算结果也是 int 型，需要强制转换类型才能赋值给 short 型。而 short s1 = 1; s1 += 1;可以正确 编译，因为 s1+= 1;相当于 s1 = (short)(s1 + 1);其中有隐含的强制类型转换。
+
+### 24、重载和重写的区别 ###
+***重写(Override)***
+从字面上看，重写就是 重新写一遍的意思。其实就是在子类中把父类本身有的方法重新写一遍。子类继承了父类原有的方法，但有时子类并不想原封不动的继承父类中的某个方法，所以在方法名，参数列表，返回类型(除过子类中方法的返回值是父类中方法返回值的子类时)都相同的情况下， 对方法体进行修改或重写，这就是重写。但要注意子类函数的访问修饰权限不能少于父类的。
+```
+public class Father {
+
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+
+Son s = new Son();
+
+s.sayHello();
+
+}
+
+public void sayHello() {
+
+System.out.println("Hello");
+}
+}
+
+class Son extends Father{
+
+@Override
+
+public void sayHello() {
+
+// TODO Auto-generated method stub
+
+System.out.println("hello by ");
+
+}
+
+}
+```
+
+原因： 在某个范围内的整型数值的个数是有限的，而浮点数却不是。
+
+重写总结：
+- 1.发生在父类与子类之间
+- 2.方法名，参数列表，返回类型（除过子类中方法的返回类型是父类中返回类型的子类）必须相同
+- 3.访问修饰符的限制一定要大于被重写方法的访问修饰符（public>protected>default>private)
+- 4.重写方法一定不能抛出新的检查异常或者比被重写方法申明更加宽泛的检查型异常
+
+***重载（Overload）***
+在一个类中，同名的方法如果有不同的参数列表（参数类型不同、参数个数不同甚至是参数顺序不同） 则视为重载。同时，重载对返回类型没有要求，可以相同也可以不同，但不能通过返回类型是否相同来判断重载。
+
+```
+public class Father {
+
+public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+
+Father s = new Father();
+
+s.sayHello();
+
+s.sayHello("wintershii");
+
+}
+
+public void sayHello() {
+
+System.out.println("Hello");
+
+}
+
+public void sayHello(String name) {
+
+System.out.println("Hello" + " " + name);
+
+}
+
+}
+```
+
+重载总结：
+- 1.重载Overload是一个类中多态性的一种表现
+- 2.重载要求同名方法的参数列表不同(参数类型，参数个数甚至是参数顺序)
+- 3.重载的时候，返回值类型可以相同也可以不相同。无法以返回型别作为重载函数的区分标准
+
+### 25、equals与==的区别 ###
+***==：***
+== 比较的是变量(栈)内存中存放的对象的(堆)内存地址，用来判断两个对象的地址是否相同，即是否是指相同一个对象。比较的是真正意义上的指针操作。
+- 1、比较的是操作符两端的操作数是否是同一个对象。
+- 2、两边的操作数必须是同一类型的（可以是父子类之间）才能编译通过。
+- 3、比较的是地址，如果是具体的阿拉伯数字的比较，值相等则为true，如：
+int a=10 与 long b=10L 与 double c=10.0都是相同的（为true），因为他们都指向地址为10的堆。
+
+***equals：***
+equals用来比较的是两个对象的内容是否相等，由于所有的类都是继承自java.lang.Object类的，所以适用于所有对象，如果没有对该方法进行覆盖的话，调用的仍然是Object类中的方法，而Object中的equals方法返回的却是==的判断。
+
+***总结：***
+所有比较是否相等时，都是用equals 并且在对常量相比较时，把常量写在前面，因为使用object的
+equals object可能为null 则空指针
+在阿里的代码规范中只使用equals ，阿里插件默认会识别，并可以快速修改，推荐安装阿里插件来排查老代码使用“==”，替换成equals
