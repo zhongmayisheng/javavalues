@@ -3,7 +3,7 @@
 该视频为高可用架构设计篇，有知名互联网公司架构师提供，适合中高级和架构师学习观看，小编整理后，免费提供大家学习下载，需要的小伙伴可以直接去下面下载。**本视频教程共16节。**
 
 
-[![Img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](www.idejihuo.com)
+[![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
 ## [课程主要内容]()
 
