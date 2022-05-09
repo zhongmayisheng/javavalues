@@ -1,17 +1,19 @@
-# Java集合/泛型面试题
+# Java 集合/泛型面试题
 
 
 ~~[说明：提供正版免费激活下载，以及激活工具和教程，点击获取](http://www.idejihuo.com)~~
 
 [![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
-## 目录
-- [Java集合/泛型面试题](#java集合泛型面试题)
+
+- [Java 集合/泛型面试题](#java-集合泛型面试题)
   - [目录](#目录)
     - [1、4种标准元注解是哪四种？](#14种标准元注解是哪四种)
     - [2、注解是什么？](#2注解是什么)
 
 ---
+
+## 目录
 
 
 ### 1、4种标准元注解是哪四种？

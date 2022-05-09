@@ -1,4 +1,4 @@
-# Java IO&NIO面试题
+# Java IO/NIO面试题
 
 
 ~~[说明：提供正版免费激活下载，以及激活工具和教程，点击获取](http://www.idejihuo.com)~~
@@ -9,7 +9,7 @@
 
 ## 目录
 
-- [Java IO&NIO面试题](#java-ionio面试题)
+- [Java IO/NIO面试题](#java-ionio面试题)
   - [目录](#目录)
     - [1、Java 中 IO 流？](#1java-中-io-流)
     - [2、 Java IO与 NIO的区别](#2-java-io与-nio的区别)
