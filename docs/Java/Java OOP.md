@@ -2,6 +2,8 @@
 
 ~~该部分为java基础部分面试题，适合初中级程序员了解。以备面试的时候问到。~~
 
+[![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
+
 [toc]{level: [3]}
 
 
