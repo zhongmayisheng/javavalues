@@ -5,10 +5,34 @@
 
 [![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
+- [Java集合/泛型面试题](#java集合泛型面试题)
+  - [面试题目录](#面试题目录)
+    - [1、ArrayList和linkedList的区别](#1arraylist和linkedlist的区别)
+    - [2、HashMap和HashTable的区别](#2hashmap和hashtable的区别)
+    - [3、Collection包结构，与Collections的区别](#3collection包结构与collections的区别)
+    - [4、泛型常用特点 （待补充）](#4泛型常用特点-待补充)
+    - [5、说说List,Set,Map三者的区别](#5说说listsetmap三者的区别)
+    - [6、Array与ArrayList有什么不一样？](#6array与arraylist有什么不一样)
+    - [7、Map有什么特点](#7map有什么特点)
+    - [8、集合类存放于 Java.util 包中， 主要有几 种接口](#8集合类存放于-javautil-包中-主要有几-种接口)
+    - [9、什么是list接口](#9什么是list接口)
+    - [10、说说ArrayList（数组）](#10说说arraylist数组)
+    - [11、Vector（ 数组实现、 线程同步）](#11vector-数组实现-线程同步)
+    - [12、说说LinkList（链表）](#12说说linklist链表)
+    - [13、什么Set集合](#13什么set集合)
+    - [14、HashSet（ Hash 表）](#14hashset-hash-表)
+    - [15、什么是TreeSet（二叉树）](#15什么是treeset二叉树)
+    - [16、说说LinkHashSet（ HashSet+LinkedHashMap）](#16说说linkhashset-hashsetlinkedhashmap)
+    - [17、HashMap（数组+链表+红黑树）](#17hashmap数组链表红黑树)
+    - [18、说说ConcurrentHashMap](#18说说concurrenthashmap)
+    - [19、HashTable（线程安全）](#19hashtable线程安全)
+    - [20、TreeMap（可排序）](#20treemap可排序)
+    - [21、LinkHashMap（记录插入顺序）](#21linkhashmap记录插入顺序)
+    - [22、泛型类](#22泛型类)
+    - [23、类型通配符?](#23类型通配符)
+    - [24、类型擦除](#24类型擦除)
+
 ## 面试题目录
-
-[toc]{level: [3]}
-
 
 ### 1、ArrayList和linkedList的区别
 Array(数组）是基于索引(index)的数据结构，它使用索引在数组中搜索和读取数据是很快的。
