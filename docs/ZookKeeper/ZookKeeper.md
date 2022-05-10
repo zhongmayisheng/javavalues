@@ -50,18 +50,18 @@ ZooKeeper 是一个开放源码的分布式协调服务，它是集群的管理�
 
 
 ### 2、Zookeeper 如何保证了分布式一致性特性？
-- 1、顺序一致性
-- 2、原子性
-- 3、单一视图
-- 4、可靠性
-- 5、实时性（最终一致性）
+1) 顺序一致性
+2) 原子性
+3) 单一视图
+4) 可靠性
+5) 实时性（最终一致性）
 
 客户端的读请求可以被集群中的任意一台机器处理，如果读请求在节点上注册了监听器，这个监听器也是由所连接的 zookeeper 机器来处理。对于写请求，这些请求会同时发给其他 zookeeper 机器并且达成一致后，请求才会返回成功。因此，随着 zookeeper 的集群机器增多，读请求的吞吐会提高但是写请求的吞吐会下降。有序性是 zookeeper 中非常重要的一个特性，所有的更新都是全局有序的，每个更新都有一个唯一的时间戳，这个时间戳称为 zxid（Zookeeper Transaction Id）。而读请求只会相对于更新有序，也就是读请求的返回结果中会带有这个 zookeeper 最新的 zxid
 
 
 ### 3、ZooKeeper 提供了什么？
-- 1、文件系统
-- 2、通知机制
+1) 文件系统
+2) 通知机制
 
 
 ### 4、Zookeeper 文件系统
@@ -79,19 +79,19 @@ ZAB 协议包括两种基本的模式：**崩溃恢复和消息广播** 。
 
 
 ### 6、四种类型的数据节点 Znode
-- 1、PERSISTENT-持久节点
+1) **PERSISTENT-持久节点**
 
 除非手动删除，否则节点一直存在于 Zookeeper 上
 
-- 2、EPHEMERAL-临时节点
+2) **EPHEMERAL-临时节点**
 
 临时节点的生命周期与客户端会话绑定，一旦客户端会话失效（客户端与zookeeper 连接断开不一定会话失效），那么这个客户端创建的所有临时节点都会被移除。
 
-- 3、PERSISTENT_SEQUENTIAL-持久顺序节点
+3) **PERSISTENT_SEQUENTIAL-持久顺序节点**
 
 基本特性同持久节点，只是增加了顺序属性，节点名后边会追加一个由父节点维护的自增整型数字。
 
-- 4、EPHEMERAL_SEQUENTIAL-临时顺序节点
+4) **EPHEMERAL_SEQUENTIAL-临时顺序节点**
 
 基本特性同临时节点，增加了顺序属性，节点名后边会追加一个由父节点维护的自增整型数字。
 
@@ -100,9 +100,9 @@ ZAB 协议包括两种基本的模式：**崩溃恢复和消息广播** 。
 Zookeeper 允许客户端向服务端的某个 Znode 注册一个 Watcher 监听，当服务端的一些指定事件触发了这个 Watcher，服务端会向指定客户端发送一个事件通知来实现分布式的通知功能，然后客户端根据 Watcher 通知状态和事件类型做出业务上的改变。
 
 **工作机制：**
-- 1、客户端注册 watcher 
-- 2、服务端处理 watcher 
-- 3、客户端回调 watcher
+1) 客户端注册 watcher 
+2) 服务端处理 watcher 
+3) 客户端回调 watcher
 
 **Watcher 特性总结**
 - 1、一次性
@@ -119,24 +119,27 @@ Zookeeper 允许客户端向服务端的某个 Znode 注册一个 Watcher 监听
 
 
 ### 8、客户端注册 Watcher 实现
-- 1、调用 getData()/getChildren()/exist()三个 API，传入 Watcher 对象
-- 2、标记请求 request，封装 Watcher 到 WatchRegistration 
-- 3、封装成 Packet 对象，发服务端发送 request
-- 4、收到服务端响应后，将 Watcher 注册到 ZKWatcherManager 中进行管理
-- 5、请求返回，完成注册。
+1) 调用 getData()/getChildren()/exist()三个 API，传入 Watcher 对象
+2) 标记请求 request，封装 Watcher 到 WatchRegistration 
+3) 封装成 Packet 对象，发服务端发送 request
+4) 收到服务端响应后，将 Watcher 注册到 ZKWatcherManager 中进行管理
+5) 请求返回，完成注册。
 
 
 ### 9、 服务端处理 Watcher 实现
-- 1、服务端接收 Watcher 并存储
+- **1、服务端接收 Watcher 并存储**
 
 接收到客户端请求，处理请求判断是否需要注册 Watcher，需要的话将数据节点的节点路径和 ServerCnxn（ServerCnxn 代表一个客户端和服务端的连接，实现了 Watcher 的process 接口，此时可以看成一个 Watcher 对象）存储在WatcherManager 的 WatchTable 和 watch2Paths 中去。
-- 2、Watcher 触发
+- **2、Watcher 触发**
+
 以服务端接收到 setData() 事务请求触发 NodeDataChanged 事件为例：
+
 1) 2.1封装 WatchedEvent将通知状态（SyncConnected）、事件类型（NodeDataChanged）以及节点路径封装成一个 WatchedEvent 对象
 2) 2.2查询 Watcher从 WatchTable 中根据节点路径查找 Watcher
 3) 2.3没找到；说明没有客户端在该数据节点上注册过 Watcher
 4) 2.4找到；提取并从 WatchTable 和 Watch2Paths 中删除对应 Watcher（从这里可以看出 Watcher 在服务端是一次性的，触发一次就失效了）
-- 3、调用 process 方法来触发 Watcher
+
+- 3、**调用 process 方法来触发 Watcher**
 
 这里 process 主要就是通过 ServerCnxn 对应的 TCP 连接发送 Watcher 事件通知
 
@@ -151,17 +154,17 @@ Zookeeper 允许客户端向服务端的某个 Znode 注册一个 Watcher 监听
 目前在 Linux/Unix 文件系统中使用，也是使用最广泛的权限控制方式。是一种粗粒度的文件系统权限控制模式。
 
 ***ACL（Access Control List）访问控制列表包括三个方面：***
-- 权限模式（Scheme）
+- **权限模式（Scheme）**
 1) **IP**：从 IP 地址粒度进行权限控制
 2) **Digest**：最常用，用类似于 ```username:password``` 的权限标识来进行权限配置，便于区分不同应用来进行权限控制
 3) **World**：最开放的权限控制方式，是一种特殊的 digest 模式，只有一个权限标识“```world:anyone```” 
 4) **Super**：超级用户
 
-- 授权对象
+- **授权对象**
 
 授权对象指的是权限赋予的用户或一个指定实体，例如 IP 地址或是机器灯。
 
-- 权限 Permission
+- **权限 Permission**
 1) **CREATE**：数据节点创建权限，允许授权对象在该 Znode 下创建子节点
 2) **DELETE**：子节点删除权限，允许授权对象删除该数据节点的子节点
 3) **READ**：数据节点的读取权限，允许授权对象访问该数据节点并读取其数据内容或子节点列表等
@@ -176,9 +179,9 @@ Zookeeper 允许客户端向服务端的某个 Znode 注册一个 Watcher 监听
 
 
 ### 13、会话管理
-- 分桶策略：将类似的会话放在同一区块中进行管理，以便于 Zookeeper 对会话进行不同区块的隔离处理以及同一区块的统一处理。
-- 分配原则：每个会话的“下次超时时间点”（ExpirationTime） 
-- 计算公式：
+- **分桶策略**：将类似的会话放在同一区块中进行管理，以便于 Zookeeper 对会话进行不同区块的隔离处理以及同一区块的统一处理。
+- **分配原则**：每个会话的“下次超时时间点”（ExpirationTime） 
+- **计算公式**：
 ```
 ExpirationTime_ = currentTime +  sessionTimeout ExpirationTime = (ExpirationTime_ / ExpirationInrerval + 1) *
 ExpirationInterval , ExpirationInterval 是指 Zookeeper 会话超时检查时间
@@ -187,14 +190,14 @@ ExpirationInterval , ExpirationInterval 是指 Zookeeper 会话超时检查时�
 
 
 ### 14、服务器角色
-- Leader
+- **Leader**
 1) 事务请求的唯一调度和处理者，保证集群事务处理的顺序性
 2) 集群内部各服务的调度者
-- Follower
+- **Follower**
 1) 处理客户端的非事务请求，转发事务请求给 Leader 服务器
 2) 参与事务请求 Proposal 的投票
 3) 参与 Leader 选举投票
-- Observer
+- **Observer**
 1) 3.0 版本以后引入的一个服务器角色，在不影响集群事务处理能力的基础上提升集群的非事务处理能力
 2) 处理客户端的非事务请求，转发事务请求给 Leader 服务器
 3) 不参与任何形式的投票
@@ -225,26 +228,28 @@ Zookeeper 的数据同步通常分为四类：
 
 在进行数据同步前，Leader 服务器会完成数据同步初始化：
 
-- peerLastZxid：
-- 
+- **peerLastZxid**：
+
 从 learner 服务器注册时发送的 ACKEPOCH 消息中提取 lastZxid（该Learner 服务器最后处理的 ZXID）
-- minCommittedLog：
+
+- **minCommittedLog**：
 
 Leader 服务器 Proposal 缓存队列 committedLog 中最小 ZXID
 
-- maxCommittedLog：
+- **maxCommittedLog**：
 
 Leader 服务器 Proposal 缓存队列 committedLog 中最大 ZXID
 
-- 直接差异化同步（DIFF 同步）
+- **直接差异化同步（DIFF 同步）**
 
 场景：peerLastZxid 介于 minCommittedLog 和 maxCommittedLog 之间
 
-- 先回滚再差异化同步（TRUNC+DIFF 同步）
+- **先回滚再差异化同步（TRUNC+DIFF 同步）**
 
 场景：当新的 Leader 服务器发现某个 Learner 服务器包含了一条自己没有的事务记录，那么就需要让该 Learner 服务器进行事务回滚--回滚到 Leader服务器上存在的，同时也是最接近于 peerLastZxid 的 ZXID
 
-- 仅回滚同步（TRUNC 同步）
+- **仅回滚同步（TRUNC 同步）**
+
 1) 场景：peerLastZxid 大于 maxCommittedLog全量同步（SNAP 同步）
 2) 场景一：peerLastZxid 小于 minCommittedLog
 3) 场景二：Leader 服务器上没有 Proposal 缓存队列且 peerLastZxid 不等于 lastProcessZxid
@@ -272,7 +277,7 @@ zk 的负载均衡是可以调控，nginx 只是能调权重，其他需要可�
 
 
 ### 21、Zookeeper 有哪几种几种部署模式？
-部署模式：单机模式、伪集群模式、集群模式
+部署模式：***单机模式***、***伪集群模式***、***集群模式***
 
 
 ### 22、集群最少要几台机器，集群规则是怎样的?
@@ -280,12 +285,14 @@ zk 的负载均衡是可以调控，nginx 只是能调权重，其他需要可�
 
 
 ### 23、集群支持动态添加机器吗？
+
 其实就是水平扩容了，Zookeeper 在这方面不太好。
+
 两种方式：
 
-全部重启：关闭所有 Zookeeper 服务，修改配置之后启动。不影响之前客户端的会话。
+- 全部重启：关闭所有 Zookeeper 服务，修改配置之后启动。不影响之前客户端的会话。
 
-逐个重启：在过半存活即可用的原则下，一台机器重启不影响整个集群对外提供服务。这是比较常用的方式。
+- 逐个重启：在过半存活即可用的原则下，一台机器重启不影响整个集群对外提供服务。这是比较常用的方式。
 3.5版本开始支持动态扩容
 
 
