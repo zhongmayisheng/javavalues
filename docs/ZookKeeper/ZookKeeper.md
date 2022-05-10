@@ -38,6 +38,25 @@
     - [28、ZAB 和 Paxos 算法的联系与区别？](#28zab-和-paxos-算法的联系与区别)
     - [29、Zookeeper 的典型应用场景](#29zookeeper-的典型应用场景)
     - [30、数据发布/订阅](#30数据发布订阅)
+    - [31、zk 的命名服务](#31zk-的命名服务)
+    - [32、分布式通知和协调](#32分布式通知和协调)
+    - [33、zk 的命名服务（文件系统）](#33zk-的命名服务文件系统)
+    - [34、zk 的配置管理（文件系统、通知机制）](#34zk-的配置管理文件系统通知机制)
+    - [35、Zookeeper 集群管理（文件系统、通知机制）](#35zookeeper-集群管理文件系统通知机制)
+    - [36、Zookeeper 分布式锁（文件系统、通知机制）](#36zookeeper-分布式锁文件系统通知机制)
+    - [37、Zookeeper 队列管理（文件系统、通知机制）](#37zookeeper-队列管理文件系统通知机制)
+    - [38、Zookeeper 角色](#38zookeeper-角色)
+    - [39、事务编号 Zxid（事务请求计数器+ epoch）](#39事务编号-zxid事务请求计数器-epoch)
+    - [40、epoch](#40epoch)
+    - [41、Zab 协议有两种模式-恢复模式（选主）、广播模式（同步）](#41zab-协议有两种模式-恢复模式选主广播模式同步)
+    - [42、Leader election（选举阶段-选出准 Leader）](#42leader-election选举阶段-选出准-leader)
+    - [43、Discovery（发现阶段-接受提议、生成 epoch、接受 epoch）](#43discovery发现阶段-接受提议生成-epoch接受-epoch)
+    - [44、Synchronization（同步阶段-同步 follower 副本）](#44synchronization同步阶段-同步-follower-副本)
+    - [45、Broadcast（广播阶段-leader 消息广播）](#45broadcast广播阶段-leader-消息广播)
+    - [46、ZAB 协议 JAVA 实现（FLE-发现阶段和同步合并为 Recovery Phase（恢复阶段） ）](#46zab-协议-java-实现fle-发现阶段和同步合并为-recovery-phase恢复阶段-)
+    - [47、投票机制](#47投票机制)
+    - [48、Zookeeper 工作原理（原子广播）](#48zookeeper-工作原理原子广播)
+    - [49、Znode 有四种形式的目录节点](#49znode-有四种形式的目录节点)
 
 
 ---
@@ -370,3 +389,42 @@ Zookeeper 是一个典型的发布/订阅模式的分布式数据管理与协调
 - 数据存储：将数据（配置信息）存储到 Zookeeper 上的一个数据节点
 - 数据获取：应用在启动初始化节点从 Zookeeper 数据节点读取数据，并在该节点上注册一个数据变更 Watcher
 - 数据变更：当变更数据时，更新 Zookeeper 对应节点数据，Zookeeper会将数据变更通知发到各客户端，客户端接到通知后重新读取变更后的数据即可。
+
+
+### 31、zk 的命名服务
+
+### 32、分布式通知和协调
+
+### 33、zk 的命名服务（文件系统）
+
+### 34、zk 的配置管理（文件系统、通知机制）
+
+### 35、Zookeeper 集群管理（文件系统、通知机制）
+
+### 36、Zookeeper 分布式锁（文件系统、通知机制）
+
+### 37、Zookeeper 队列管理（文件系统、通知机制）
+
+### 38、Zookeeper 角色
+
+### 39、事务编号 Zxid（事务请求计数器+ epoch）
+
+### 40、epoch
+
+### 41、Zab 协议有两种模式-恢复模式（选主）、广播模式（同步）
+
+### 42、Leader election（选举阶段-选出准 Leader）
+
+### 43、Discovery（发现阶段-接受提议、生成 epoch、接受 epoch）
+
+### 44、Synchronization（同步阶段-同步 follower 副本）
+
+### 45、Broadcast（广播阶段-leader 消息广播）
+
+### 46、ZAB 协议 JAVA 实现（FLE-发现阶段和同步合并为 Recovery Phase（恢复阶段） ）
+
+### 47、投票机制
+
+### 48、Zookeeper 工作原理（原子广播）
+
+### 49、Znode 有四种形式的目录节点
