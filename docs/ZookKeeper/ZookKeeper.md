@@ -1,4 +1,4 @@
-# Java ZooKeeper面试题
+# ZooKeeper 面试题
 
 
 ~~[说明：提供正版免费激活下载，以及激活工具和教程，点击获取](http://www.idejihuo.com)~~
@@ -6,7 +6,7 @@
 [![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
 
-- [Java ZooKeeper面试题](#java-zookeeper面试题)
+- [ZooKeeper 面试题](#zookeeper-面试题)
   - [目录](#目录)
     - [1、什么是Zookeeper?](#1什么是zookeeper)
     - [2、Zookeeper 如何保证了分布式一致性特性？](#2zookeeper-如何保证了分布式一致性特性)
