@@ -6,9 +6,6 @@
 [![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
 
-
-## 目录
-
 - [Java 反射面试题](#java-反射面试题)
   - [目录](#目录)
     - [1、除了使用new创建对象之外，还可以用什么方法创建对象？](#1除了使用new创建对象之外还可以用什么方法创建对象)
@@ -25,6 +22,7 @@
 
 ---
 
+## 目录
 
 ### 1、除了使用new创建对象之外，还可以用什么方法创建对象？
 使用Java反射可以创建对象!
