@@ -115,7 +115,7 @@ MongoDB 是由 C++语言编写的，是一个基于分布式文件存储的开�
 
 MongoDB 将数据存储为一个文档，数据结构由键值(key=>value)对组成。 MongoDB 文档类似于 JSON 对象。字段值可以包含其他文档， 数组及文档数组。
 
-[![img](./img/图片22.png)](http://www.idejihuo.com)
+[![img](../img/图片22.png)](http://www.idejihuo.com)
 
 
 ### 2、mongodb有哪些特点？
