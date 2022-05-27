@@ -1,5 +1,8 @@
 # 北京-京东-Java中级面试题
 
+~~[说明：提供正版免费激活下载，以及激活工具和教程，点击获取](http://blog.idejihuo.com)~~
+
+
 [![img](../img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
 
