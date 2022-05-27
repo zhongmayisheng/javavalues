@@ -1,12 +1,39 @@
 # 北京-百度-Java中级面试题
 
+~~[说明：提供正版免费激活下载，以及激活工具和教程，点击获取](http://www.idejihuo.com)~~
+
+
+[![img](../img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
+
+
+- [北京-百度-Java中级面试题](#北京-百度-java中级面试题)
+  - [目录](#目录)
+  - [Spring面试题](#spring面试题)
+    - [01、BeanFactory 和 ApplicationContext 有什么区别](#01beanfactory-和-applicationcontext-有什么区别)
+    - [02、Spring Bean 的生命周期](#02spring-bean-的生命周期)
+    - [03、Spring IOC 如何实现](#03spring-ioc-如何实现)
+    - [04、说说 Spring AOP](#04说说-spring-aop)
+    - [05、Spring AOP 实现原理](#05spring-aop-实现原理)
+    - [06、Spring 事务实现方式](#06spring-事务实现方式)
+    - [07、Spring 事务底层原理](#07spring-事务底层原理)
+    - [08、如何自定义注解实现功能](#08如何自定义注解实现功能)
+    - [09、Spring MVC 运行流程](#09spring-mvc-运行流程)
+    - [10、Spring MVC 启动流程](#10spring-mvc-启动流程)
+    - [11、Spring 的单例实现原理](#11spring-的单例实现原理)
+    - [12、Spring 框架中用到了哪些设计模式](#12spring-框架中用到了哪些设计模式)
+  - [Netty面试题](#netty面试题)
+    - [01、为什么选择 Netty](#01为什么选择-netty)
+    - [02、说说业务中，Netty 的使用场景](#02说说业务中netty-的使用场景)
+    - [03、原生的 NIO 在 JDK 1.7 版本存在 epoll bug](#03原生的-nio-在-jdk-17-版本存在-epoll-bug)
+    - [04、什么是 TCP 粘包/拆包](#04什么是-tcp-粘包拆包)
+    - [05、TCP 粘包/拆包的解决办法](#05tcp-粘包拆包的解决办法)
+    - [06、Netty 线程模型](#06netty-线程模型)
+    - [07、说说 Netty 的零拷贝](#07说说-netty-的零拷贝)
+    - [08、etty 内部执行流程](#08etty-内部执行流程)
+
+---
 
 ## 目录
-[toc]{level: [3]}
-
-
-[![img](https://gitee.com/itmatu/zhongmayisheng/raw/master/video/img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
-
 
 ## Spring面试题
 
