@@ -5,6 +5,7 @@
 
 [![img](../img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
+
 - [Java集合/泛型面试题](#java集合泛型面试题)
   - [面试题目录](#面试题目录)
     - [1、ArrayList和linkedList的区别](#1arraylist和linkedlist的区别)

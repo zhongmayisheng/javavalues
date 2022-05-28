@@ -6,7 +6,6 @@
 [![img](../img/Release_Preview_image_1280x600_IntelliJIDEA-2x.jpg)](http://www.idejihuo.com)
 
 
-
 - [Java 反射面试题](#java-反射面试题)
   - [目录](#目录)
     - [1、什么是java序列化，如何实现java序列化？](#1什么是java序列化如何实现java序列化)
