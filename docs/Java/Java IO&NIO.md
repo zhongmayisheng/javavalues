@@ -71,7 +71,8 @@ ObjectInputStream，ObjectOutputSream
 程，然后返回。所以事实上，在非阻塞 IO 模型中，用户线程需要不断地询问内核数据是否就绪，也就说非阻塞 IO不会交出 CPU，而会一直占用 CPU。 典型的非阻塞 IO 模型一般如下：
 ```
 while(true){
-data = socket.read(); if(data!= error){
+data = socket.read(); 
+if(data!= error){
 //处理数据
 break;
 }
