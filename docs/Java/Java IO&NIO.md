@@ -72,10 +72,11 @@ ObjectInputStream，ObjectOutputSream
 ```
 while(true){
 data = socket.read(); 
-if(data!= error){
+javaif(data!= error){
 //处理数据
 break;
 }
+
 }
 ```
 但是对于非阻塞 IO 就有一个非常严重的问题， 在 while 循环中需要不断地去询问内核数据是否就绪，这样会导致 CPU 占用率非常高，因此一般情况下很少使用 while 循环这种方式来读取数据。
