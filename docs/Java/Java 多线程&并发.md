@@ -126,26 +126,33 @@
 Thread 类本质上是实现了 Runnable 接口的一个实例，代表一个线程的实例。 启动线程的唯一方法就是通过 Thread 类的 start()实例方法。 start()方法是一个 native 方法，它将启动一个新线
 程，并执行 run()方法。
 ```
-public class MyThread extends Thread { public void run() {
-System.out.println("MyThread.run()");
+public class MyThread extends Thread { 
+  public void run() {
+    System.out.println("MyThread.run()");
+  }
 }
-}
-MyThread myThread1 = new MyThread(); myThread1.start();
+MyThread myThread1 = new MyThread(); 
+myThread1.start();
 ```
 
 ### 3、实现 Runnable 接口。
 如果自己的类已经 extends 另一个类，就无法直接 extends Thread，此时，可以实现一个Runnable 接口。
 ```
-public class MyThread extends OtherClass implements Runnable { public void run() {
-System.out.println("MyThread.run()");
-}
+public class MyThread extends OtherClass implements Runnable { 
+  public void run() {
+    System.out.println("MyThread.run()");
+  }
 }
 //启动 MyThread，需要首先实例化一个 Thread，并传入自己的 MyThread 实例：
-MyThread myThread = new MyThread(); Thread thread = new Thread(myThread); thread.start();
+MyThread myThread = new MyThread(); 
+Thread thread = new Thread(myThread); 
+thread.start();
 //事实上，当传入一个 Runnable target 参数给 Thread 后， Thread 的 run()方法就会调用
-target.run()  public void run() {
-if (target != null) { target.run();
-}
+target.run()  
+public void run() {
+  if (target != null) { 
+    target.run();
+  }
 }
 ```
 
@@ -155,9 +162,12 @@ if (target != null) { target.run();
 //创建一个线程池
 ExecutorService pool = Executors.newFixedThreadPool(taskSize);
 // 创建多个有返回值的任务
-List<Future> list = new ArrayList<Future>(); for (int i = 0; i < taskSize; i++) {
-Callable c = new MyCallable(i + " ");
-// 执行任务并获取 Future 对象Future f = pool.submit(c); list.add(f);
+List<Future> list = new ArrayList<Future>(); 
+for (int i = 0; i < taskSize; i++) {
+  Callable c = new MyCallable(i + " ");
+  // 执行任务并获取 Future 对象
+  Future f = pool.submit(c); 
+  list.add(f);
 }
 // 关闭线程池
 pool.shutdown();
@@ -168,23 +178,28 @@ System.out.println("res： " + f.get().toString());
 }
 ```
 
+
 ### 5、基于线程池的方式
 线程和数据库连接这些资源都是非常宝贵的资源。那么每次需要的时候创建，不需要的时候销毁，是非常浪费资源的。那么我们就可以使用缓存的策略，也就是使用线程池。
 ```
 // 创建线程池
-ExecutorService threadPool = Executors.newFixedThreadPool(10); while(true) {
-threadPool.execute(new Runnable() { // 提交多个线程任务，并执行
-@Override
-public void run() {
-System.out.println(Thread.currentThread().getName() + " is running .."); try {
-Thread.sleep(3000);
-} catch (InterruptedException e) { e.printStackTrace();
-}
+ExecutorService threadPool = Executors.newFixedThreadPool(10); 
+while(true) {
+  threadPool.execute(new Runnable() { // 提交多个线程任务，并执行
+  @Override
+  public void run() {
+    System.out.println(Thread.currentThread().getName() + " is running .."); 
+    try {
+    Thread.sleep(3000);
+  } catch (InterruptedException e) { 
+    e.printStackTrace();
+  }
 }
 });
 }
 }
 ```
+
 
 ### 6、4 种线程池
 
@@ -206,15 +221,18 @@ Java 里面线程池的顶级接口是 Executor，但是严格意义上讲 Execu
 ```
 ScheduledExecutorService scheduledThreadPool= Executors.newScheduledThreadPool(3); scheduledThreadPool.schedule(newRunnable(){
 @Override
-public void run() { System.out.println("延迟三秒");
+public void run() { 
+  System.out.println("延迟三秒");
 }
 }, 3, TimeUnit.SECONDS);
-scheduledThreadPool.scheduleAtFixedRate(newRunnable(){ @Override
-public void run() {
-System.out.println("延迟 1 秒后每三秒执行一次");
-}
+scheduledThreadPool.scheduleAtFixedRate(newRunnable(){ 
+  @Override
+  public void run() {
+    System.out.println("延迟 1 秒后每三秒执行一次");
+  }
 },1,3,TimeUnit.SECONDS);
 ```
+
 
 ***newSingleThreadExecutor***
 
@@ -227,26 +245,35 @@ Executors.newSingleThreadExecutor()返回一个线程池（这个线程池只有
 2) 2、使用stop方法强行终止，但是不推荐这个方法，因为stop和suspend及resume一样都是过期作废的方法。
 3) 3、使用interrupt方法中断线程。
 ```
-class MyThread extends Thread { volatile boolean stop = false;
-public void run() { while (!stop) {
-System.out.println(getName() + " is running"); try {
-sleep(1000);
-} catch (InterruptedException e) { System.out.println("week up from blcok..."); stop = true; // 在异常处理代码中修改共享变量的状态
-}
-}
+class MyThread extends Thread { 
+  volatile boolean stop = false;
+  public void run() { 
+    while (!stop) {
+  System.out.println(getName() + " is running"); 
+    try {
+    sleep(1000);
+    } catch (InterruptedException e) { 
+      System.out.println("week up from blcok..."); 
+      stop = true; // 在异常处理代码中修改共享变量的状态
+    }
+  }
 System.out.println(getName() + " is exiting...");
 }
 }
 
 class InterruptThreadDemo3 {
-public static void main(String[] args) throws InterruptedException { MyThread m1 = new MyThread();
-System.out.println("Starting thread..."); m1.start();
+public static void main(String[] args) throws InterruptedException { 
+  MyThread m1 = new MyThread();
+System.out.println("Starting thread..."); 
+m1.start();
 Thread.sleep(3000);
-System.out.println("Interrupt thread...: " + m1.getName()); m1.stop = true; // 设置共享变量为true
+System.out.println("Interrupt thread...: " + m1.getName()); 
+m1.stop = true; // 设置共享变量为true
 m1.interrupt(); // 阻塞时退出阻塞状态
 Thread.sleep(3000); // 主线程休眠3秒以便观察线程m1的中断情况
 System.out.println("Stopping application...");
 ```
+
 
 ### 8、notify()和notifyAll()有什么区别？
 - notify可能会导致死锁，而notifyAll则不会
